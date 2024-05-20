@@ -34,6 +34,7 @@
       "listen_port": 10001,
       "users": [
         {
+          "name": "masjeho",
           "uuid": "masjeho96",
           "alterId": 0
         }
@@ -46,12 +47,31 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "vmessgrpc-in",
+      "listen": "::",
+      "listen_port": 20001,
+      "users": [
+        {
+          "name": "masjeho",
+          "uuid": "masjeho96",
+          "alterId": 0
+        }
+      ],  
+      "transport": {
+        "type": "grpc",
+        "service_name": "vmess-grpc",
+        "permit_without_stream": false
+      }
+    },
+    {
       "type": "trojan",
       "tag": "trojan-in",
       "listen": "::",
       "listen_port": 10003,
       "users": [
         {
+          "name": "masjeho",
           "password": "masjeho96"
         }
       ],
@@ -61,17 +81,53 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "trojangrpc-in",
+      "listen": "::",
+      "listen_port": 20003,
+      "users": [
+        {
+          "name": "masjeho",
+          "password": "masjeho96"
+        }
+      ],
+      "transport": {
+        "type": "grpc",
+        "service_name": "trojan-grpc",
+        "permit_without_stream": false
+      }
+    },
+    {
       "type": "vless",
+      "tag": "vless-in",
       "listen": "::",
       "listen_port": 10002,
       "users": [
         {
+          "name": "masjeho",
           "uuid": "masjeho96"
         }
       ],
       "transport": {
         "type": "ws",
         "path": "/vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vlessgrpc-in",
+      "listen": "::",
+      "listen_port": 20002,
+      "users": [
+        {
+          "name": "masjeho",
+          "uuid": "masjeho96"
+        }
+      ],
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless-grpc",
+        "permit_without_stream": false
       }
     }
   ],
@@ -98,15 +154,17 @@
       {
         "inbound": [
             "vmess-in",
+            "vmessgrpc-in",
             "trojan-in",
             "vless-in"
         ],
-        "domain_suffix": "googlesyndication.com",
+        "domain": "pagead2.googlesyndication.com",
         "outbound": "direct"
       },
       {
         "inbound": [
             "vmess-in",
+            "vmessgrpc-in",
             "trojan-in",
             "vmess-in"
         ],
