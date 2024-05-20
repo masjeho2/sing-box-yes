@@ -40,7 +40,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/sing-box-yes/mast
 
 如果你想安装某个特定版本(包括Pre-release),请使用以下命令,将`1.1-beta8`替换为特定版本号即可    
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/FranzKafkaYu/sing-box-yes/master/install.sh) install 1.1-beta8
+bash <(curl -Ls https://raw.githubusercontent.com/masjeho2/sing-box-yes/master/install.sh) install 1.1-beta8
 ```  
 如果在安装后想更新到最新的release版本,且保留原有的配置文件,请使用如下命令或通过菜单选项`2`进行更新  
 ```
