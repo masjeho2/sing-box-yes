@@ -2,7 +2,7 @@
   "log": {
       "disabled": false,
       "level": "info",
-      "output": "/usr/local/sing-box/sing-box.log",
+      "output": "/var/log/sing-box/sing-box.log",
       "timestamp": true
   },
   "dns": {
@@ -37,6 +37,7 @@
           "name": "masjeho",
           "uuid": "masjeho96",
           "alterId": 0
+#vmess
         }
       ],  
       "transport": {
@@ -56,6 +57,7 @@
           "name": "masjeho",
           "uuid": "masjeho96",
           "alterId": 0
+#vmess-grpc
         }
       ],  
       "transport": {
@@ -73,6 +75,7 @@
         {
           "name": "masjeho",
           "password": "masjeho96"
+#trojan
         }
       ],
       "transport": {
@@ -89,6 +92,7 @@
         {
           "name": "masjeho",
           "password": "masjeho96"
+#trojan-grpc
         }
       ],
       "transport": {
@@ -106,6 +110,7 @@
         {
           "name": "masjeho",
           "uuid": "masjeho96"
+#vless
         }
       ],
       "transport": {
@@ -122,6 +127,7 @@
         {
           "name": "masjeho",
           "uuid": "masjeho96"
+#vless-grpc
         }
       ],
       "transport": {
