@@ -135,6 +135,19 @@
         "service_name": "vless-grpc",
         "permit_without_stream": false
       }
+    },
+    {
+      "type": "socks",
+      "tag": "socks-in",
+      "listen": "::",
+      "listen_port": 10006,
+      "users": [
+        {
+          "username": "masjeho",
+          "password": "masjeho96"
+#socks
+        }
+      ]
     }
   ],
   "outbounds": [
@@ -164,7 +177,9 @@
             "trojan-in",
             "trojangrpc-in",
             "vless-in",
-            "vlessgrpc-in"
+            "vlessgrpc-in",
+            "socks-in"
+            
         ],
         "domain": "pagead2.googlesyndication.com",
         "outbound": "direct"
@@ -176,7 +191,9 @@
             "trojan-in",
             "trojangrpc-in",
             "vless-in",
-            "vlessgrpc-in"
+            "vlessgrpc-in",
+            "socks-in"
+            
         ],
         "geosite": [
             
