@@ -374,6 +374,8 @@ install_sing-box() {
     fi
     install_systemd_service && enable_sing-box && start_sing-box
     LOGI "Sing-box installed success and started success"
+    wget -O ${CONFIG_FILE_PATH}/geosite.db https://github.com/malikshi/sing-box-geo/releases/latest/download/geosite.db
+    wget -O ${CONFIG_FILE_PATH}/geoip.db https://github.com/malikshi/sing-box-geo/releases/latest/download/geoip.db
 }
 
 #update sing-box
