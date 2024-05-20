@@ -156,7 +156,9 @@
             "vmess-in",
             "vmessgrpc-in",
             "trojan-in",
-            "vless-in"
+            "trojangrpc-in",
+            "vless-in",
+            "vlessgrpc-in"
         ],
         "domain": "pagead2.googlesyndication.com",
         "outbound": "direct"
@@ -166,7 +168,9 @@
             "vmess-in",
             "vmessgrpc-in",
             "trojan-in",
-            "vmess-in"
+            "trojangrpc-in",
+            "vless-in",
+            "vlessgrpc-in"
         ],
         "geosite": [
             
